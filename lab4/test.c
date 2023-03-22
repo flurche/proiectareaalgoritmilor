@@ -17,6 +17,7 @@ int main() {
 
   // Add an element to the beginning of the linked list
   addAtBeginning(&head, 0);
+  modify(head, 0, 5);
 
   // Display the linked list again
   printf("Linked list after adding an element to the beginning: ");

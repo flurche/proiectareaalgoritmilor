@@ -31,3 +31,20 @@ void display(Node *head)
 	}
 	printf("\n");
 }
+
+void modify(Node *head, int k, Data newVal)
+{
+    int i = 0;
+    Node *temp = head;
+
+    // Traverse the list until the k-th element is reached
+    while (i < k && temp != NULL) {
+        temp = temp->next;
+        i++;
+    }
+
+    // If the k-th element exists, modify its value
+    if (temp != NULL) {
+        temp->val = newVal;
+    }
+}
