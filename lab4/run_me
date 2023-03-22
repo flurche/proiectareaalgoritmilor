@@ -1,0 +1,3 @@
+gcc -o test test.c liste.c
+./test.exe
+rm test.exe
